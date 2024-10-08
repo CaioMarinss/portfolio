@@ -27,7 +27,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & .logo{
+
+    & .logo {
         margin-right: 20px;
     }
 }
@@ -96,6 +97,37 @@ h2 {
 
 h1 {
     font-size: 4rem;
+    animation:
+        saltos 5s steps(30) 1s 1 normal both,
+        piscapisca 700ms infinite normal;
+}
+
+.cursor {
+    position: relative;
+    margin: 0 auto;
+    border-right: 5px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes saltos {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes piscapisca {
+    from {
+        border-right-color:rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 h2 {
@@ -107,8 +139,8 @@ a {
     color: white;
 }
 
-button{
-    
+button {
+
     display: inline-block;
     cursor: pointer;
     border-radius: 500px;
@@ -122,8 +154,8 @@ button{
     height: 50px;
 }
 
-textarea{
-    
+textarea {
+
     width: 50%;
     color: rgb(36, 35, 42);
     height: 50px;
