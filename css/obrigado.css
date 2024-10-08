@@ -1,0 +1,12 @@
+nav{
+    padding: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
