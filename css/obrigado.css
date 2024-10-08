@@ -5,8 +5,15 @@ main{
     display: flex;
     flex-direction: column;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
+
+
+#salsicha{
+    max-width: 355px;
+    filter: drop-shadow(5px 5px 45px #1e5249);
+}
+
+@media (max-width: 600px){
+    #salsicha{
+        max-width: 255px;
+    }
 }
