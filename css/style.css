@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
     background: radial-gradient(circle, rgba(153, 226, 180, 1) 11%, rgba(36, 130, 119, 1) 100%);
     color: #14746F;
     font-family: "Open Sans", sans-serif;
+    font-size: 20px;
 }
 
 li {
@@ -167,30 +167,18 @@ textarea {
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 950px){
     main{
         display: block;
         & .foto > img {
-                max-width: 200px;
-        }
-    }
-    
-    section{
-        margin: 10% auto;
-    }
-
-    h1{
-        font-size: 3rem;
-    }
-}
-@media (max-width: 850px){
-    main{
-        & .foto > img {
-                max-width:200px;
+            max-width:250px;
         }
         & h1{
             font-size: 3rem;
         }
+    }
+    section{
+        margin: 10% auto;
     }
 }
 
