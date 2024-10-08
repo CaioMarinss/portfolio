@@ -71,6 +71,7 @@ main {
 
         & img {
             max-width: 300px;
+            width: 100%;
             margin: 10px;
             border-radius: 100%;
             filter: drop-shadow(5px 5px 10px #0e2723);
@@ -167,7 +168,7 @@ textarea {
 
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px){
     main{
         display: block;
         & .foto > img {
@@ -182,7 +183,7 @@ textarea {
     
     }
 }
-@media (max-width: 435px){
+@media (max-width: 500px){
     main{
         & .foto > img {
             max-width:200px;
