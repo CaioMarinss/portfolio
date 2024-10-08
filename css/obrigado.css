@@ -6,6 +6,11 @@ main{
     flex-direction: column;
 }
 
+footer{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
 
 #salsicha{
     max-width: 355px;
