@@ -9,13 +9,8 @@ main{
     flex: 1; 
 }
 
+
 #salsicha{
     max-width: 355px;
     filter: drop-shadow(5px 5px 45px #1e5249);
-}
-
-@media (max-width: 600px){
-    #salsicha{
-        max-width: 255px;
-    }
 }

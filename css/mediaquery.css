@@ -7,21 +7,22 @@
                 max-width: 300px;
             }
         }
-        & .dev{
+
+        & .dev {
             font-size: 20px;
         }
     }
 }
 
 @media (max-width: 1100px) {
-    nav{
+    nav {
         position: relative;
     }
+
     main {
         display: inline;
-        flex-direction: column;
+
         & .foto {
-            grid-row: span 2;
             & img {
                 max-width: 250px;
             }
@@ -35,6 +36,46 @@
             margin: 10% auto;
         }
 
+        & #projetos {
+            display: flex;
+            flex-direction: column;
+
+            & #item1 {
+                order: 1; /* Definindo a ordem como 1 para aparecer primeiro */
+            }
+            & #txt1 {
+                order: 2; /* Definindo a ordem como 2 */
+            }
+            
+            & #d1{
+                order: 3;
+            }
+            & #item2{
+                order: 4;
+            }
+            & #txt2{
+                order: 5;
+            }
+            & #d2{
+                order: 6;
+            }
+            & #item3{
+                order: 7;
+            }
+            & #txt3{
+                order: 8;
+            }
+
+            & .item-projeto {
+
+                & img {
+                    border-radius: 3rem;
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+                
+            }
+        }
     }
 }
 
@@ -53,4 +94,7 @@
         font-size: 15px;
     }
 
+    #salsicha {
+        max-width: 255px;
+    }
 }
