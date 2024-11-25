@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Verifica o estado preferido de modo escuro do usuário no localStorage
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.remove('light-mode');
@@ -11,12 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
         .addEventListener('click', function () {
             document.body.classList.toggle('light-mode');
             document.body.classList.toggle('dark-mode');
-
-            // Salva a preferência no localStorage
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
-});
+        })
+})

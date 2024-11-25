@@ -17,7 +17,6 @@
     --button-border-light: rgba(36, 130, 119, 1);
 }
 
-
 /* Light Mode - padrão */
 body.light-mode {
     transition: background-color .6s ease, color .6s ease;
@@ -33,7 +32,12 @@ body.light-mode {
         background-color: var(--background-button-light);
         color: #000;
     }
+
+    #toggle-dark-mode{
+        filter: invert(1) brightness(100%);
+    }
 }
+
 
 /* Dark Mode */
 body.dark-mode {
@@ -64,8 +68,8 @@ body.dark-mode {
         background-color: #0e3b3b;
     }
 
-
 }
+
 
 #botoes{
     display: flex;
@@ -181,7 +185,9 @@ li {
     margin: 15px 2vw;
 
 }
-
+#toggle-dark-mode{
+    cursor: pointer;
+}
 button {
 
     display: inline-block;
